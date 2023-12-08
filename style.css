@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=M+PLUS+Rounded+1c&family=Playfair+Display:ital,wght@0,400;0,500;0,900;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;1,600&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    color: #FF9B9B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #fac788;
+}
+
+a {
+    transition: all 300ms ease;
+}
+
+/* Nav bar */
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    background-color: #CBFFA9;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181) ;
+}
+
+.logo {
+    font-size: 2rem;
+    color: black;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* Phone menu */
+
+
+#phone-nav {
+    display: none;
+}
+
+.phone-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.phone-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* go to queries now finish it all and them come back */
+
+.phone-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out; /* to put it in the X shape when we close it */
+}
+
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+
+/* GO TO JS FINISH IT ALL */
+
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.phone-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);  /* the X shape transformation */
+}
+
+.phone-icon.open span:nth-child(2) {
+   opacity: 0;
+}
+
+.phone-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);  /* the X shape transformation */
+}
+
+
+.phone-icon span:first-child {
+    transform: none;
+}
+
+.phone-icon span:first-child {
+    opacity: 1;
+}
+
+.phone-icon span:first-child {
+    transform: none;
+}
+
+/* About */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* profile section */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+
+.section__pic-container {
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin: auto 0;
+    position: relative;
+    top: 30%;
+    
+}
+
+.section__pic-container:hover {
+    height: 500px;
+    width: 500px;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p{
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section__text__p2:hover{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+  
+  .bt {
+    border: #CBFFA9 1rem solid;
+    border-radius: 25px;
+    background: #CBFFA9;
+    color: #FF9B9B;
+    font-size: large;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bolder;
+  }
+
+  .bt:hover {
+    cursor: pointer;
+    background-color: rgba(186, 253, 142, 0.521);
+    border-color: rgba(186, 253, 142, 0.322);
+  }
+
+/* About section */
+
+#education {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.education-pic {
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin: auto 0;
+}
+
+.E-title {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.E__Text {
+    align-self: center;
+    text-align: center;
+}
+
+.E-text-p1{
+    font-weight: 600;
+    text-align: center;
+}
+
+.E-text-p1:hover{
+    font-size: 20px;
+}
+
+.E-title2{
+    text-align: center;
+}
+
+/* Languages */
+
+.sec3-div img {
+    width: 100px;
+}
+
+#languages {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+#L-title{
+    text-align: center;
+    margin-bottom: 100px;
+    }
+
+.L-p{
+    font-size: 20px;
+    color: #D2E0FB;
+   font-weight: bold;
+}
+
+/* Platforms */
+
+.sec4-div img{
+    width: 100px;
+}
+
+#vs {
+    width: 200px;
+}
+
+#platform {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: fit-content;
+}
+
+#P-title{
+text-align: center;
+margin-bottom: 100px;
+}
+
+/* Projects */
+
+#Pl-title{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+#projects img {
+    border-radius: 20px;
+    width: 70rem;
+}
+
+#projects img:hover{
+    width: 80rem;
+    cursor: pointer;
+}
+
+/* Social */
+
+#social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+
+  .icon {
+    height: 80px;
+  }
+
+  .S-title{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  
+  /* FOOTER SECTION */
+  
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+
+
+
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icon.png">
+    <title>Lujen portfolio</title>
+</head>
+<body>
+     <!-- Desktop-nav -->
+     <nav id="desktop-nav">
+        <div class="logo">Lujen</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#language">Languages</a></li>
+                <li><a href="#platform">Platforms</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#social-media">Social media</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Phone-nav -->
+
+    <nav id="phone-nav">
+        <div class="logo">Lujen</div>
+        <div class="phone-menu">
+            <div class="phone-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#language" onclick="toggleMenu()">Languages</a></li>
+                <li><a href="#platform" onclick="toggleMenu()">Platforms</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#social-media" onclick="toggleMenu()">Social media</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile -->
+
+    <div id="about">
+    <div class="sec1-div">
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile.png" alt="lujen Al Radwan Profile pic" title="lujen Al Radwan Profile pic" height="200">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Lujen Al Radwan</h1>
+                <p class="section__text__p2" title="Programming and smart device applications in iau">programmer</p>
+                <a href="mailto:lujenalradwan@gmail.com"><button class="bt" title="Send Email To Me">Send</button></a>
+            </div>
+        </section>
+      </div>
+    </div>
+      <!-- Education -->
+
+      <div class="sec2-div">
+        <section id="education">
+            <div class="education-pic">
+                <img src="./assets/education.png" height="200">
+            </div>
+            <div class="E-Text">
+                <h1 class="E-title">Imam Abdulrahman Bin Faisal University</h1>
+                <p class="E-text-p1">Student in IAU, Computer Department,
+                    Specialization in programming and smart device applications,
+                    level 5
+                </p>
+                <h1 class="E-title2">Diploma</h1>
+            </div>
+        </section>
+      </div>
+
+      <!-- Languages -->
+      <div id="language">
+      <div class="sec3-div">
+        <h1 id="L-title">Languages</h1>
+        <section id="languages">
+            <div id="L-div">
+            <img src="./assets/css.png" alt="Css logo">
+            <input type="range" value="50" disabled>
+        </div>
+        <div id="L-div">
+            <img src="./assets/html.png" alt="Html logo">
+            <input type="range" value="95" disabled>
+        </div>
+        <div id="L-div">
+            <img src="./assets/java.png" alt="Java logo">
+            <input type="range" value="94" disabled>
+        </div>
+        <div id="L-div">
+            <img src="./assets/swift.png" alt="Swift logo">
+            <input type="range" value="94" disabled>
+        </div>
+        <div id="L-div">
+            <img src="./assets/dart.png" alt="Dart logo">
+            <p class="L-p">learning..</p>
+        </div>
+        </section>
+      </div>
+    </div>
+
+      <!-- Platforms -->
+
+      <div id="platform">
+      <div class="sec4-div">
+        <h1 id="P-title">Programs that I dealt with</h1>
+        <section id="platform">
+            <img src="./assets/Apache_NetBean.png" alt="Apache NetBean">
+            <img src="./assets/balsamiq.png" alt="balsamiq">
+            <img src="./assets/flutter.png" alt="flutter">
+            <img src="./assets/vs code.png" alt="vs code">
+            <img src="./assets/Visual-Studio.png" alt="Visual Studio" id="vs">
+        </section>
+      </div>
+    </div>
+      <!-- Projects -->
+
+      <div id="project">
+        <h1 id="Pl-title">Projects</h1>
+      <div class="sec5-div">
+        <section id="projects">
+            <div id="image-continer">
+            <img src="./assets/project.png" alt="project pic">
+        </div>
+    </section>
+      </div>
+    </div>
+      <!-- Social media -->
+      <div id="social-media">
+      <section id="social">
+        <h1 class="S-title">Contact Me</h1>
+        <div class="social-icons">
+          <div class="icons">
+            <a href="https://www.instagram.com/lsea_1/"><img
+              src="./assets/instagram.png"
+              alt="instagram icon"
+              class="icon"/></a>
+          </div>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/lujen-al-radwan-787221286/"><img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon"/>
+            </a>
+          </div>
+          <div class="icons">
+            <a href="https://twitter.com/1myland"><img
+              src="./assets/x.webp"
+              alt="X icon"
+              class="icon"/></a>
+        </div>
+        <div class="icons">
+            <a href="https://github.com/lujen2023"><img
+              src="./assets/github.png"
+              alt="Github icon"
+              class="icon"/></a>
+        </div>
+      </section>
+    </div>
+
+      <!-- footer -->
+
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#language">Languages</a></li>
+                <li><a href="#platform">Platforms</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#social-media">Social media</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Lujen Al Radwan. All Rights Reserved.</p>
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>
